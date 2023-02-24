@@ -50,6 +50,10 @@ section {
         transition duration-300
 }
 
+#navbar .navitems a.active {
+    @apply text-slate-500
+}
+
 .mobile-navbar {
     @apply shadow-lg shadow-indigo-300 bg-white fixed top-16 left-0 right-6 bottom-0 lg:hidden
 }
