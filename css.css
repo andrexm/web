@@ -73,8 +73,8 @@ section {
 }
 
 .social-icon {
-    @apply block aspect-square rounded-full p-2 ring-2 ring-indigo-400 hover:rotate-[360deg]
-        transition duration-1000
+    @apply block w-9 h-9 rounded-full p-2 ring-2 ring-indigo-400 hover:rotate-[360deg]
+        transition duration-1000 flex items-center justify-center
 }
 
 
