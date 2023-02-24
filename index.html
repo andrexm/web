@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex" />
     <title>André Nascimento</title>
-    <link rel="shortcut icon" href="{{ url('assets/images/logo.jpg') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ url('assets/web/css/styles.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/web/css/lunar.min.css') }}">
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/lunar.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-    <!-- Specific styles -->
-    @yield('styles')
 </head>
 <body>
     <ln-back-loader>
         <ln-loader></ln-loader>
     </ln-back-loader>
     
-    @include('web.partials.navbar')
+    <!-- Navbar -->
+    <nav id="navbar">
+	    <div class="logo">
+	        <a href="index.html"><img src="assets/images/logo.jpg" alt="" class="h-8"></a>
+	    </div>
+
+	    <!-- Desktop Navbar -->
+	    <div class="navitems lg:block">
+	        <a href="#!">Home</a>
+	        <a href="curriculo.html">Currículo</a>
+	        <a href="https://andrescript.blogspot.com/" target="_blank">Blog <icon-out data-class="h-4"></icon-out></a>
+	    </div>
+
+	    <!-- Mobile Navbar -->
+	    <div class="mobile-navbar" hideable>
+	        <div>
+	            <a href="#!">Home</a>
+	            <a href="curriculo.html">Currículo</a>
+	            <a href="https://andrescript.blogspot.com/" target="_blank">Blog <icon-out data-class="h-4"></icon-out></a>
+	        </div>
+	    </div>
+	    <icon-bars class="lg:hidden" data-class="h-7 w-7 text-indigo-400" data-toggle=".mobile-navbar"></icon-bars>
+	</nav>
+	<!-- End Navbar -->
+
     @yield('content')
-    @include('web.partials.footer')
+
+
+    <!-- Footer -->
+    <section class="border-t-4 border-slate-300 text-slate-500 text-center py-6">
+	    2022 &copy; André Nascimento
+	</section>
 
     <!-- Scripts -->
-    <script src="{{ url('assets/web/js/lunar.js') }}"></script>
-    <script src="{{ url('assets/web/js/scripts.js') }}"></script>
-
-    <!-- Specific scripts -->
-    @yield('scripts')
+    <script src="assets/js/lunar.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

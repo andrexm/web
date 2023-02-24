@@ -1,3 +1,149 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    @apply scroll-smooth
+}
+
+body {
+    @apply bg-indigo-50
+}
+
+*::selection {
+    @apply bg-indigo-400 text-white
+}
+
+section {
+    @apply mx-2 md:mx-8 lg:mx-32
+}
+
+.title {
+    @apply text-4xl font-semibold text-slate-500
+}
+
+.youtube-video {
+    @apply w-full rounded-lg overflow-hidden shadow-indigo-300 shadow-lg;
+    aspect-ratio: 16/9;
+}
+
+[data-toggle] {
+    @apply cursor-pointer
+}
+
+/* Navbar */
+#navbar {
+    @apply shadow-lg shadow-indigo-100 bg-white py-3 px-2 md:px-16 lg:px-32 flex justify-between items-center fixed
+        top-0 right-0 left-0 z-40
+}
+
+#navbar .logo img {
+    @apply h-10
+}
+
+#navbar .navitems {
+    @apply hidden lg:flex items-center
+}
+
+#navbar .navitems a {
+    @apply block w-min flex items-center gap-2 px-3 text-indigo-400 font-medium hover:text-slate-500
+        transition duration-300
+}
+
+.mobile-navbar {
+    @apply shadow-lg shadow-indigo-300 bg-white fixed top-16 left-0 right-6 bottom-0 lg:hidden
+}
+
+.mobile-navbar div {
+    @apply flex flex-wrap divide-y
+}
+
+.mobile-navbar a {
+    @apply block w-full h-fit py-2 px-3 flex gap-2 items-center text-slate-500 hover:text-indigo-400 transition duration-300
+}
+
+
+/* Banner */
+.banner {
+    @apply lg:h-[38rem] py-8 lg:py-0 mt-16 lg:mt-10 mx-2 md:mx-16 lg:mx-32 lg:flex lg:justify-center lg:items-center
+}
+
+.social-icon {
+    @apply block aspect-square rounded-full p-2 ring-2 ring-indigo-400 hover:rotate-[360deg]
+        transition duration-1000
+}
+
+
+/* Buttons */
+.btn {
+    @apply block w-fit h-min rounded-full shadow-lg px-7 py-2 font-medium
+}
+
+.btn.outline-indigo {
+    @apply ring-indigo-400 hover:bg-indigo-400 ring-2 text-indigo-400 hover:text-white shadow-indigo-200 transition duration-300
+}
+
+.btn.indigo {
+    @apply bg-indigo-400 text-white hover:bg-indigo-500 transition duration-300
+}
+
+
+/* Blog */
+post-item-dot {
+    @apply h-4 w-4 bg-indigo-100 rounded-full
+}
+
+post-item {
+    @apply block rounded-lg shadow-lg shadow-indigo-300 w-10/12 bg-white/70 hover:-translate-y-6
+        transition duration-300
+}
+
+post-item post-item-header {
+    @apply block bg-indigo-400 p-2 md:p-4 text-white flex gap-2 items-center
+}
+
+post-item post-item-content {
+    @apply block p-2 md:p-4
+}
+
+post-item post-item-title {
+    @apply block text-xl font-semibold text-slate-500 mb-4
+}
+
+post-item post-item-desc {
+    @apply block text-slate-500 mb-4
+}
+
+post-item post-item-footer {
+    @apply block text-slate-500 flex justify-between items-center
+}
+
+
+/* Modal */
+app-modal {
+    @apply block w-full m-1 md:w-1/2 lg:w-4/12 rounded-lg shadow-indigo-200 shadow-lg
+}
+
+app-modal app-modal-title {
+    @apply block bg-indigo-400/100 text-white flex items-center justify-between p-2 md:p-3
+}
+
+app-modal app-modal-content {
+    @apply block p-2 md:p-3 bg-white/100 rounded-b-lg text-slate-500
+}
+
+.modal-back {
+    @apply block fixed top-0 bottom-0 right-0 left-0 bg-white/70 z-50 flex items-center justify-center
+        backdrop-blur-md
+}
+
+
+/** Cards ------------------ */
+
+.card {
+    @apply shadow-md shadow-indigo-300 rounded-b-lg bg-white/50
+}
+
+.card-title {
+    @apply text-lg font-medium text-white bg-indigo-500 py-2 px-3
+}
