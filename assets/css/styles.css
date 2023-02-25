@@ -553,6 +553,14 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -589,6 +597,10 @@ video {
   height: 2rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -603,6 +615,10 @@ video {
 
 .w-7 {
   width: 1.75rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 @keyframes pulse {
@@ -673,6 +689,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded-full {
@@ -763,6 +783,11 @@ video {
   line-height: 2rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -835,6 +860,10 @@ video {
 .ring-indigo-300 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(165 180 252 / var(--tw-ring-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {

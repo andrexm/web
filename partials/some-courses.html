@@ -1,0 +1,85 @@
+<!-- Other Courses -->
+<section>
+    <div class="title mb-5">Alguns Cursos</div>
+    <div class="grid md:grid-cols-2 gap-8 mb-16" id="showCourses">
+        <!-- Courses -->
+    </div>
+</section>
+
+<script inComponent>
+    let courses = [
+        ['Udemy', 'Laravel 8 Vuejs & RESTful API Course With Complete Project', '26/09/2022', 'https://www.udemy.com/certificate/UC-a1c70ccd-f957-43a7-8bd6-9d3422fafe7b/'],
+        ['Udemy', 'Vue JS - Guia Completo (Vue CLI, Vue Router, Vuex e GraphQL)', '21/01/2022', 'https://www.udemy.com/certificate/UC-54d1ff1f-b36a-4211-9410-2f5c96cd0249/'],
+        ['Udemy', 'Dominando TypeScript', '31/07/2021', 'https://www.udemy.com/certificate/UC-c1d4131b-cf93-4a5e-88bc-0b8c14512e10/'],
+        ['Digital Innovation One', 'Trabalhando com Componentes em React', '23/04/2022 12:32', 'https://certificates.digitalinnovation.one/07D3553B'],
+        ['Digital Innovation One', 'Boas-vindas ao Decola Tech 2a edição','21/12/2021 15:20', 'https://certificates.digitalinnovation.one/118BE500'],
+        ['Digital Innovation One', 'Manipulando a D.O.M. com JavaScript','24/09/2021 14:10', 'https://certificates.digitalinnovation.one/1CF30AC6'],
+        ['Digital Innovation One', 'Trabalhando com Collections Java', '18/08/2021 09:53', 'https://certificates.digitalinnovation.one/4C4D319C'],
+        ['Digital Innovation One', 'Introdução ao Vue.js', '08/08/2021 14:59', 'https://certificates.digitalinnovation.one/60F1FF89'],
+        ['Digital Innovation One', 'Desenvolvimento básico em Java', '08/08/2021 14:30', 'https://certificates.digitalinnovation.one/05DDBAEC'],
+        ['Digital Innovation One', 'Instalação e Configuração do Visual Studio Code', '07/08/2021 23:04', 'https://certificates.digitalinnovation.one/9823BAF6'],
+        ['Digital Innovation One', 'Praticando Orientação a Objetos com Java', '07/08/2021 22:53', 'https://certificates.digitalinnovation.one/C954E871'],
+        ['Digital Innovation One', 'Dominando IDEs Java', '07/08/2021 21:41', 'https://certificates.digitalinnovation.one/AE0A5651'],
+        ['Digital Innovation One', 'Trabalhando com Branches no GitHub', '07/08/2021 17:37', 'https://certificates.digitalinnovation.one/26C91921'],
+        ['Digital Innovation One', 'Boas-vindas ao Bootcamp Capgemini Fullstack Java and Angular', '07/08/2021 15:41', 'https://certificates.digitalinnovation.one/3ECCD310'],
+        ['Digital Innovation One', 'Introdução ao TypeScript: Explorando Classes, Tipos e Interfaces', '31/07/2021 21:41', 'https://certificates.digitalinnovation.one/713DB896'],
+        ['Digital Innovation One', 'Introdução ao ReactJS', '30/07/2021 21:06', 'https://certificates.digitalinnovation.one/43D7AA43'],
+        ['Digital Innovation One', 'SQL SERVER - Criando suas primeiras consultas', '26/07/2021 21:35', 'https://certificates.digitalinnovation.one/89842B63'],
+        ['Digital Innovation One', 'Boas-vindas ao Bootcamp everis New Talents Java', '26/07/2021 09:55', 'https://certificates.digitalinnovation.one/9973514B'],
+        ['Digital Innovation One', 'Programação para internet com JavaScript', '23/07/2021 18:29', 'https://certificates.digitalinnovation.one/B725A24D'],
+        ['Digital Innovation One', 'Conceitos avançados de performance e otimização usando Angular', '23/07/2021 17:15', 'https://certificates.digitalinnovation.one/43360E34'],
+        ['Digital Innovation One', 'Lógica de programação Essencial', '21/07/2021 20:47', 'https://certificates.digitalinnovation.one/6C8441BF'],
+        ['Digital Innovation One', 'Boas-vindas ao Bootcamp LocalizaLabs React Developer', '20/07/2021 21:46', 'https://certificates.digitalinnovation.one/01DB2CF9'],
+        ['Digital Innovation One', 'Boas-vindas ao Bootcamp Santander Fullstack Developer', '04/07/2021 21:03', 'https://certificates.digitalinnovation.one/8F22876C'],
+        ['Digital Innovation One', 'Criando um repositório para seus projetos inovadores', '01/07/2021 18:08', 'https://certificates.digitalinnovation.one/1036A069'],
+        ['Digital Innovation One', 'Implementando testes automatizados usando Cypress em uma aplicação Angular', '01/03/2021 21:45', 'https://certificates.digitalinnovation.one/156F9042'],
+        ['Digital Innovation One', 'Desenvolvendo SPA com Angular', '23/02/2021 19:16', 'https://certificates.digitalinnovation.one/CDBC9A15'],
+        ['Digital Innovation One', 'A arquitetura de componentes e a gestão da complexidade no front-end', '20/02/2021 10:37', 'https://certificates.digitalinnovation.one/37CBFC00'],
+        ['Digital Innovation One', 'Aplicações avançadas com Angular', '07/02/2021 18:45', 'https://certificates.digitalinnovation.one/511BB43B'],
+        ['Digital Innovation One', 'Técnicas avançadas em Angular 8', '03/02/2021 09:59', 'https://certificates.digitalinnovation.one/FA67F9AB'],
+        ['Digital Innovation One', 'Recriando a Interface do Netflix', '01/02/2021 17:30', 'https://certificates.digitalinnovation.one/EB9DC192'],
+        ['Digital Innovation One', 'Introdução ao Angular 8', '31/01/2021 19:28', 'https://certificates.digitalinnovation.one/E0424F79'],
+        ['Digital Innovation One', 'Aprenda o que são Estrutura de Dados e Algoritmos', '28/01/2021 12:09', 'https://certificates.digitalinnovation.one/C8162D02'],
+        ['Digital Innovation One', 'Boas-vindas ao Avanade Angular Developer', '27/01/2021 21:42', 'https://certificates.digitalinnovation.one/B55F40AA'],
+        ['Digital Innovation One', 'Entendendo Promises de uma vez por todas', '28/11/2020 14:52', 'https://certificates.digitalinnovation.one/D4EAD084'],
+        ['Digital Innovation One', 'Como funciona o async/await', '28/11/2020 11:27', 'https://certificates.digitalinnovation.one/FFB763B3'],
+        ['Digital Innovation One', 'Desenvolvimento avançado com JavaScript ES6', '28/11/2020 10:12', 'https://certificates.digitalinnovation.one/E2A51BA1'],
+        ['Digital Innovation One', 'Desmistificando map, filter e reduce', '14/11/2020 18:26', 'https://certificates.digitalinnovation.one/B055FF7C'],
+        ['Digital Innovation One', 'JavaScript ES6 essencial', '13/11/2020 21:39', 'https://certificates.digitalinnovation.one/52891447'],
+        ['Digital Innovation One', 'Recriando a Página Inicial do Instagram', '13/11/2020 09:36', 'https://certificates.digitalinnovation.one/3C441BBA'],
+        ['Digital Innovation One', 'SPTech Desenvolvimento Back-end', '12/11/2020 14:46', 'https://certificates.digitalinnovation.one/0F7A28F5'],
+        ['Digital Innovation One', 'Projetos ágeis com SCRUM', '12/11/2020 14:02', 'https://certificates.digitalinnovation.one/F8E3A6DE'],
+        ['Digital Innovation One', 'Desenvolvimento Avançado em PHP', '11/11/2020 18:37', 'https://certificates.digitalinnovation.one/9246980C'],
+        ['Digital Innovation One', 'Boas-vindas ao Bootcamp everis FullStack Developer', '09/11/2020 21:15', 'https://certificates.digitalinnovation.one/5EDFECB0'],
+        ['Digital Innovation One', 'Orientação a Objetos, Exceções e Banco de Dados com PHP', '09/11/2020 10:37', 'https://certificates.digitalinnovation.one/0B6D5D0E'],
+        ['Digital Innovation One', 'Conceitos e Melhores Práticas com Bancos de Dados PostgreSQL', '08/11/2020 19:15', 'https://certificates.digitalinnovation.one/D18F6E31'],
+        ['Digital Innovation One', 'Conhecendo funções e validação de dados com PHP', '07/11/2020 19:23', 'https://certificates.digitalinnovation.one/6AED7030'],
+        ['Digital Innovation One', 'Expert Lesson: Arquitetura Hexagonal: mantendo aplicações saudáveis', '07/11/2020 17:55', 'https://certificates.digitalinnovation.one/A7D59390'],
+        ['Digital Innovation One', 'Arquitetura de Sistemas Avançado', '07/11/2020 17:15', 'https://certificates.digitalinnovation.one/85BC8CFC'],
+        ['Digital Innovation One', 'Introdução ao domain driven design e padrões de arquitetura', '07/11/2020 13:10', 'https://certificates.digitalinnovation.one/F61D7B72'],
+        ['Digital Innovation One', 'Fundamentos de Arquitetura de Sistemas', '07/11/2020 10:44', 'https://certificates.digitalinnovation.one/F29F1D9B'],
+        ['Digital Innovation One', 'Programação para internet com HTML5 e CSS3', '06/11/2020 22:55', 'https://certificates.digitalinnovation.one/02047D74'],
+        ['Digital Innovation One', 'Introdução ao Git e ao GitHub', '06/11/2020 17:38', 'https://certificates.digitalinnovation.one/F02C3C22'],
+        ['Digital Innovation One', 'Lógica de Programação Essencial', '06/11/2020 16:02', 'https://certificates.digitalinnovation.one/491EB696'],
+        ['Digital Innovation One', 'Programação para internet com JavaScript', '01/11/2020 23:28', 'https://certificates.digitalinnovation.one/51A53760'],
+        ['Digital Innovation One', 'Introdução a Criação de Websites com HTML5 e CSS3', '01/11/2020 23:09', 'https://certificates.digitalinnovation.one/A70D4C07'],
+        ['Digital Innovation One', 'Construindo páginas para internet com Bootstrap', '01/11/2020 11:19', 'https://certificates.digitalinnovation.one/1D230DC0'],
+        ['Digital Innovation One', 'Introdução à biblioteca jQuery', '31/10/2020 17:58', 'https://certificates.digitalinnovation.one/35069D95'],
+        ['Digital Innovation One', 'Formulários com condicionais e sessões com PHP', '31/10/2020 16:59', 'https://certificates.digitalinnovation.one/48C913C4'],
+        ['Digital Innovation One', 'Introdução ao PHP', '31/10/2020 12:46', 'https://certificates.digitalinnovation.one/D2EF607B']
+    ];
+
+    let coursesHTML = ``;
+    courses.forEach(course => {
+        coursesHTML += `<div class="mb-3 text-lg">
+            <a class="block text-indigo-400 font-bold" href="${course[3]}">
+                ${course[0]}
+            </a>
+            <div class="text-slate-500 font-medium">
+                ${course[1]}, ${course[2]}
+            </div>
+        </div>`;
+    });
+
+    showCourses.innerHTML = coursesHTML;
+</script>
