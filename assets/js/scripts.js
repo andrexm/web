@@ -104,12 +104,6 @@ times.forEach(el => {
     }
 });
 
-// Icon typing
-if (type)
-setInterval(() => {
-    type.classList.toggle('hidden');
-}, 450);
-
 
 /**
  * Scroll to the position of the element to be visible
