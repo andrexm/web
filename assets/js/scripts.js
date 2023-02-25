@@ -104,12 +104,3 @@ times.forEach(el => {
     }
 });
 
-
-/**
- * Scroll to the position of the element to be visible
- * @param {string} selector 
- */
- function visible(selector) {
-    let d = lunar.el(selector).pure.getBoundingClientRect();
-    window.scrollBy(0, d.top - 80);
-}
