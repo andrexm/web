@@ -44,6 +44,136 @@
     <!-- Contents -->
     <app-include src="partials/banner"></app-include>
     <a name="content"></a>
+
+
+    <!-- Techs -->
+    <section class="px-3 py-0 md:p-5 bg-indigo-400 text-white rounded-lg shadow-lg shadow-indigo-300 mb-5
+    	grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white">
+	    <!-- FrontEnd -->
+	    <div class="text-center mx-2 my-3 md:my-0">
+	        <div class="font-bold text-xl mb-2">FrontEnd</div>
+	        <div class="flex gap-5 flex-wrap justify-center">
+	            <img src="assets/images/tecs/vuejs.png" alt="" class="grayscale h-10 invert" data-toggle="modal-vue">
+	            <img src="assets/images/tecs/angular.png" alt="" class="h-10 invert" data-toggle="modal-angular">
+	            <img src="assets/images/tecs/tailwind.png" alt="" class="h-10 invert" data-toggle="modal-tailwind">
+	        </div>
+	    </div>
+
+	    <!-- BackEnd -->
+	    <div class="text-center mx-2 pt-3 mb-3 md:pt-0 md:my-0">
+	        <div class="font-bold text-xl mb-2">BackEnd</div>
+	        <div class="flex gap-5 flex-wrap justify-center">
+	            <img src="assets/images/tecs/laravel.png" alt="" class="grayscale h-10 invert" data-toggle="modal-laravel">
+	            <img src="assets/images/tecs/symfony.png" alt="" class="h-10 invert" data-toggle="modal-symfony">
+	            <img src="assets/images/tecs/codeigniter.png" alt="" class="h-10 invert" data-toggle="modal-ci">
+	        </div>
+	    </div>
+	    <div class="text-center mx-2 py-4 md:py-0">
+	        <div class="font-bold text-xl mb-2">Tecnologias</div>
+	        Estas são as que mais domino! Veja as outras que tenho algum
+	        conhecimento aqui.
+	    </div>
+	</section>
+
+	<section class="mt-4 mb-24 text-center font-medium text-slate-500">
+	    Como desenvolvedor fullstack, estou sempre em busca de aperfeiçoamento em diversas tecnologias,
+	    e o mundo da programação está em constante evolução, de forma que sempre estou atento às mudanças e
+	    entusiasmado para as novidades vindouras!
+	</section>
+
+	<!-- Modals -->
+	<modal-angular class="modal-back" hideable>
+	    <app-modal>
+	        <app-modal-title>
+	            Angular (framework)
+	            <icon-close data-class="h-5 w-5" data-toggle="modal-angular"></icon-close>
+	        </app-modal-title>
+	        <app-modal-content>
+	            <a class="block text-slate-400 mb-1" href="https://pt.wikipedia.org/wiki/Angular_(framework)" target="_blank">
+	                Origem: Wikipédia, a enciclopédia livre.
+	            </a>
+	            Angular (comumente referido como 'Angular 2+' ou 'Angular 2') é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript liderado pela Equipe Angular do Google e por uma comunidade de indivíduos e corporações. Angular é uma reescrita completa do AngularJS, feito pela mesma equipe que o construiu.
+	        </app-modal-content>
+	    </app-modal>
+	</modal-angular>
+
+	<modal-vue class="modal-back" hideable>
+	    <app-modal>
+	        <app-modal-title>
+	            Vue.js
+	            <icon-close data-class="h-5 w-5" data-toggle="modal-vue"></icon-close>
+	        </app-modal-title>
+	        <app-modal-content>
+	            <a class="block text-slate-400 mb-1" href="https://pt.wikipedia.org/wiki/Vue.js" target="_blank">
+	                Origem: Wikipédia, a enciclopédia livre.
+	            </a>
+	            Vue.js (informalmente chamado de Vue; pronunciado /vjuː/) é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.
+	        </app-modal-content>
+	    </app-modal>
+	</modal-vue>
+
+	<modal-tailwind class="modal-back" hideable>
+	    <app-modal>
+	        <app-modal-title>
+	            Tailwind CSS
+	            <icon-close data-class="h-5 w-5" data-toggle="modal-tailwind"></icon-close>
+	        </app-modal-title>
+	        <app-modal-content>
+	            <a class="block text-slate-400 mb-1" href="https://en.wikipedia.org/wiki/Tailwind_CSS" target="_blank">
+	                Origem: Wikipédia, a enciclopédia livre.
+	            </a>
+	            Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of 'utility' CSS classes that can be used to style each element by mixing and matching.
+	        </app-modal-content>
+	    </app-modal>
+	</modal-tailwind>
+
+	<modal-laravel class="modal-back" hideable>
+	    <app-modal>
+	        <app-modal-title>
+	            Laravel
+	            <icon-close data-class="h-5 w-5" data-toggle="modal-laravel"></icon-close>
+	        </app-modal-title>
+	        <app-modal-content>
+	            <a class="block text-slate-400 mb-1" href="https://pt.wikipedia.org/wiki/Laravel" target="_blank">
+	                Origem: Wikipédia, a enciclopédia livre.
+	            </a>
+	            Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC (model, view, controller). Algumas características proeminentes do Laravel são sua sintaxe simples e concisa, um sistema modular com gerenciador de dependências dedicado, várias formas de acesso a banco de dados relacionais e vários utilitários indispensáveis no auxílio ao desenvolvimento e manutenção de sistemas.
+	        </app-modal-content>
+	    </app-modal>
+	</modal-laravel>
+
+	<modal-symfony class="modal-back" hideable>
+	    <app-modal>
+	        <app-modal-title>
+	            Symfony
+	            <icon-close data-class="h-5 w-5" data-toggle="modal-symfony"></icon-close>
+	        </app-modal-title>
+	        <app-modal-content>
+	            <a class="block text-slate-400 mb-1" href="https://pt.wikipedia.org/wiki/Symfony" target="_blank">
+	                Origem: Wikipédia, a enciclopédia livre.
+	            </a>
+	            Symfony é um framework livre do tipo fullstack para desenvolvimento de aplicações web, com a linguagem PHP e o paradigma MVC (model-view-controller), disponível sob a Licença MIT. É uma ferramenta com o uso via uma interface gráfica acessada via navegador web.
+	        </app-modal-content>
+	    </app-modal>
+	</modal-symfony>
+
+	<modal-ci class="modal-back" hideable>
+	    <app-modal>
+	        <app-modal-title>
+	            CodeIgniter
+	            <icon-close data-class="h-5 w-5" data-toggle="modal-ci"></icon-close>
+	        </app-modal-title>
+	        <app-modal-content>
+	            <a class="block text-slate-400 mb-1" href="https://pt.wikipedia.org/wiki/CodeIgniter" target="_blank">
+	                Origem: Wikipédia, a enciclopédia livre.
+	            </a>
+	            O CodeIgniter é um framework de desenvolvimento de aplicações em PHP. Seu objetivo, por meio de um abrangente conjunto de bibliotecas voltadas às tarefas mais comuns, de uma interface e uma estrutura lógica simples para acesso àquelas bibliotecas, é possibilitar que o usuário desenvolva projetos mais rapidamente do que se estivesse codificando do zero A primeira versão pública do CodeIgniter foi lançada em 28 de fevereiro de 2006.
+	        </app-modal-content>
+	    </app-modal>
+	</modal-ci>
+	<!-- End Techs -->
+
+
     <app-include src="partials/from-blog"></app-include>
     <app-include src="partials/some-projects"></app-include>
     <app-include src="partials/some-works"></app-include>
