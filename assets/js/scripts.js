@@ -93,14 +93,3 @@ let c = [
     }
 ];
 lunar.register(c);
-
-// Multiply elements
-let times = lunar.all('[data-times]', true);
-times.forEach(el => {
-    let m = el.dataset.times;
-    for (let i = 1; i < m; i++) {
-        let n = el.cloneNode(true);
-        el.parentElement.append(n);
-    }
-});
-
